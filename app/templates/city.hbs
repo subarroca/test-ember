@@ -1,1 +1,15 @@
-{{outlet}}
+<ul>
+	{{#each model.location as |location|}}
+		<li>{{location}}</li>
+	{{/each}}
+</ul>
+
+
+<ul>
+	{{#each model.info as |item|}}
+		<li>
+			<strong>{{item.c}}</strong>
+			<span>{{item.id}}</span>
+		</li>
+	{{/each}}
+</ul>
