@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1>app.welcome</h1>
+
+<div>
+	<a {{ action "setLang('ca')" }}>ca</a>
+	<a {{ action "setLang('es')" }}>es</a>
+	<a {{ action "setLang('en')" }}>en</a>
+</div>
+
+<nav>
+	{{#link-to "about" }}
+		About
+	{{/link-to}}
+	
+	{{#link-to "cities" }}
+		Cities
+	{{/link-to}}
+</nav>
 
 {{outlet}}
