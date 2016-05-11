@@ -1,1 +1,17 @@
 <h2>Cities</h2>
+{{model}}
+{{model.fitxes}}
+{{model.fitxes.v}}
+
+
+{{#each model as |prop|}}
+	{{prop}}
+{{/each}}
+
+<ul>
+	{{#each model.fitxes.v as |city|}}
+		<li>
+			{{city}}
+		</li>
+	{{/each}}
+</ul>
